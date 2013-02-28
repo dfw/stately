@@ -1,0 +1,91 @@
+/* _base.scss */
+
+// Imports
+@import "compass/css3";
+
+// Mixins
+// Set font size, line height, and margin
+@mixin type($size, $line: null, $top: null, $bottom: null) {
+	font-size: ($size * 10) + px;
+	font-size: $size + rem;
+	@if $line {
+		line-height: ($line * 10) + px;
+		line-height: $line + rem;
+	}
+	@if $top and $bottom {
+		margin-top: ($top * 10) + px;
+		margin-top: $top + rem;
+		margin-bottom: ($bottom * 10) + px;
+		margin-bottom: $bottom + rem;
+	}
+}
+// Set fallback bg color and rgba bg color
+@mixin background-opacity($color, $opacity: null) {
+    background-color: $color;
+    @if $opacity {
+		.rgba & {
+			background-color: rgba($color, $opacity);
+		}
+    }
+}
+
+// Variables
+$link-color: #2a98ff;
+$link-hover-color: #0E5BA6;
+
+
+/* Type */
+@font-face {
+    font-family: 'Trocchi';
+    src: url('../type/Trocchi-webfont.eot');
+    src: url('../type/Trocchi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/Trocchi-webfont.woff') format('woff'),
+         url('../type/Trocchi-webfont.ttf') format('truetype'),
+         url('../type/Trocchi-webfont.svg#Trocchi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Trocchi';
+    src: url('../type/Trocchi-Bold-webfont.eot');
+    src: url('../type/Trocchi-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/Trocchi-Bold-webfont.woff') format('woff'),
+         url('../type/Trocchi-Bold-webfont.ttf') format('truetype'),
+         url('../type/Trocchi-Bold-webfont.svg#Trocchi') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+/* /Type */
+
+/* Global */
+html {
+	font-size:62.5%;
+}
+body {
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6,
+pre, form, fieldset, p, blockquote, th, td {
+	margin:0;
+	padding:0;
+}
+li {
+	list-style:none;
+}
+a {
+	color: $link-color;
+	text-decoration:none;
+	.csstransitions & {
+		@include transition(all 0.25s linear);
+	}
+}
+a:hover {
+	color: $link-hover-color;
+}
+img {
+	display:block;
+	max-width:100%;
+}
+abbr {
+	font-variant: small-caps;
+}
+/* /Global */

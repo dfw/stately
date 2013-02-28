@@ -1,0 +1,190 @@
+// Imports
+@import "normalize";
+@import "base";
+
+/* style.scss */
+
+/* Global */
+body {
+	background: url('../images/project_paper.png') repeat left top;
+	color: #555;
+	@include type(1.6, 2.4);
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.csstransitions {
+	h1, nav, footer {
+		@include transition(font-size 0.25s linear);
+	}	
+}
+/* /Global */
+
+/* Header */
+h1 {
+	color: #555;
+	font-family: Trocchi, Georgia, serif;
+	@include type(3.6, 4.8);
+	margin-top: 16px;
+	margin-top: 1.6rem;
+	font-weight: normal;
+	text-align: center;
+	abbr {
+		color: #333;
+		letter-spacing: 0.15em;
+	}
+}
+nav {
+	@include type(1.4);
+	text-align: center;
+	li {
+		display: inline-block;
+		&:after {
+			content: "/";
+			margin-right: 5px;
+			padding-left: 10px;
+		}
+		&:last-child:after {
+			content: "";
+			margin: 0;
+			padding: 0;
+		}
+	}
+	a.active {
+		color: $link-hover-color;
+	}
+}
+/* /Header */
+
+/* Main */
+ul.stately {
+	li {
+		color: #AAA;
+		.rgba & {
+			color: rgba(#000, 0.3);
+		}
+		.cssanimations .order &#nj, .cssanimations .order &#md, .cssanimations .order &#ma, .cssanimations .order &#me {
+			-webkit-animation-name: highlight;
+			-webkit-animation-duration: 1s;
+			-webkit-animation-timing-function: ease-in-out;
+			-webkit-animation-fill-mode: forwards;
+		}
+		.cssanimations .order &#ct {
+			-webkit-animation-name: highlight, highlight-two, highlight-three;
+			-webkit-animation-duration: 1s;
+			-webkit-animation-timing-function: ease-in-out;
+			-webkit-animation-fill-mode: none, none, forwards;
+			-webkit-animation-delay: 2s, 5s, 7s;
+		}
+		.cssanimations .order &#nj {
+			-webkit-animation-delay: 1s;
+		}
+		.cssanimations .order &#md {
+			-webkit-animation-delay: 3s;
+		}
+		.cssanimations .order &#ma {
+			-webkit-animation-delay: 4s;
+		}
+		.cssanimations .order &#me {
+			-webkit-animation-delay: 6s;
+		}
+		.csstransitions & {
+			-webkit-transition: color 0.5s ease-in-out 0s;
+		}
+		.lived & {
+			&#nj, &#ct, &#md, &#ma, &#me {
+				color: $link-color;
+			}
+		}
+		.visited & {
+			&#nj, &#ct, &#md, &#ma, &#me, &#vt, &#nh, &#ri, &#ny, &#pa, &#de, &#md, &#dc, &#va, &#nc, &#sc, &#fl, &#la, &#mo, &#oh, &#ne, &#wa, &#or, &#ca, &#nv, &#co {
+				color: $link-color;
+			}
+		}
+		.visit & {
+			&#il, &#az, &#mt, &#ak, &#hi {
+				color: $link-color;
+			}
+		}
+		.again & {
+			&#ca, &#nv, &#fl, &#co, &#va, &#pa, &#md, &#dc {
+				color: $link-color;
+			}
+		}
+	}
+}
+@-webkit-keyframes highlight {
+	25%, 75%, 100% {
+		color: $link-color;
+	}
+}
+@-webkit-keyframes highlight-two {
+	25%, 75% {
+		color: $link-color;
+	}
+}
+@-webkit-keyframes highlight-three {
+	25%, 75%, 100% {
+		color: $link-color;
+	}
+}
+/* /Main */
+
+/* Footer */
+footer {
+	@include type(1.2, null, 0, 1.6);
+	text-align: center;
+}
+/* /Footer */
+
+/* Media Queries */
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) {
+	body {
+		background: url('../images/project_paper@2x.png') repeat left top;
+		background-size: 105px 105px;
+	}
+}
+@media screen and (min-width: 600px) {
+	ul.stately {
+		font-size: 400px;
+		width: 400px;
+	}
+	h1 {
+		@include type(4.8);
+	}
+	nav {
+		@include type(1.8);
+	}
+	h1, nav {
+		margin-top: 24px;
+		margin-top: 2.4rem;
+	}
+	footer {
+		@include type(1.4, null, 0, 1.6);
+	}
+}
+@media screen and (min-width: 800px) {
+	ul.stately {
+		font-size: 600px;
+		width: 600px;
+	}
+	h1 {
+		@include type(6.4);
+	}
+	nav {
+		@include type(2.4);
+	}
+	h1, nav {
+		margin-top: 32px;
+		margin-top: 3.2rem;
+	}
+	footer {
+		@include type(1.8, 3, 0, 2.4);
+	}
+}
+@media screen and (min-width: 1000px) {
+	ul.stately {
+		font-size: 800px;
+		width: 800px;
+	}
+}
+/* /Media Queries */
