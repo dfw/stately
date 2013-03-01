@@ -545,55 +545,55 @@ ul.stately li {
 }
 
 @-webkit-keyframes highlight {
-  25%, 75%, 100% {
+  75%, 100% {
     color: #2a98ff;
   }
 }
 
 @-webkit-keyframes highlight-two {
-  25%, 75% {
+  75% {
     color: #2a98ff;
   }
 }
 
 @-webkit-keyframes highlight-three {
-  25%, 75%, 100% {
+  75%, 100% {
     color: #2a98ff;
   }
 }
 
 @-moz-keyframes highlight {
-  25%, 75%, 100% {
+  75%, 100% {
     color: #2a98ff;
   }
 }
 
 @-moz-keyframes highlight-two {
-  25%, 75% {
+  75% {
     color: #2a98ff;
   }
 }
 
 @-moz-keyframes highlight-three {
-  25%, 75%, 100% {
+  75%, 100% {
     color: #2a98ff;
   }
 }
 
 @keyframes highlight {
-  25%, 75%, 100% {
+  75%, 100% {
     color: #2a98ff;
   }
 }
 
 @keyframes highlight-two {
-  25%, 75% {
+  75% {
     color: #2a98ff;
   }
 }
 
 @keyframes highlight-three {
-  25%, 75%, 100% {
+  75%, 100% {
     color: #2a98ff;
   }
 }
