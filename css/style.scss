@@ -139,8 +139,20 @@ footer {
 
 @media screen and (-webkit-min-device-pixel-ratio: 1.5) {
 	body {
-		background: url('../images/project_paper@2X.png') repeat left top;
+		background: url('../images/project_paper@.png') repeat left top;
 		background-size: 105px 105px;
+	}
+}
+@media screen and (min-width: 480px) {
+	h1 {
+		@include type(3.6, 4.8);
+	}
+	nav {
+		@include type(1.4);
+		li:after {
+			margin-right: 5px;
+			padding-left: 10px;
+		}
 	}
 }
 @media screen and (min-width: 600px) {
