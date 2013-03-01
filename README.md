@@ -1,4 +1,4 @@
-#DFW in the USA
+#[DFW in the USA](http://dfw.github.com/stately)
 Map of the USA that shows the states I've lived in, visited, want to visit and want to visit again.
 
 Thanks to [Ben Markowitz](http://www.benmarkowitz.com/) for creating [Stately](http://intridea.github.com/stately/).
