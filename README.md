@@ -5,4 +5,6 @@ Thanks to [Ben Markowitz](http://www.benmarkowitz.com/) for creating [Stately](h
 
 Page designed and developed by David F. Weiss.
 
+[@dfweiss](http://twitter.com/dfweiss)
 
+[http://dfweiss.com/](http://dfweiss.com/)
