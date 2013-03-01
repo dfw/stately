@@ -66,6 +66,14 @@ ul.stately {
 			-webkit-animation-duration: 1s;
 			-webkit-animation-timing-function: ease-in-out;
 			-webkit-animation-fill-mode: forwards;
+			-moz-animation-name: highlight;
+			-moz-animation-duration: 1s;
+			-moz-animation-timing-function: ease-in-out;
+			-moz-animation-fill-mode: forwards;
+			animation-name: highlight;
+			animation-duration: 1s;
+			animation-timing-function: ease-in-out;
+			animation-fill-mode: forwards;
 		}
 		.cssanimations .order &#ct {
 			-webkit-animation-name: highlight, highlight-two, highlight-three;
@@ -73,21 +81,41 @@ ul.stately {
 			-webkit-animation-timing-function: ease-in-out;
 			-webkit-animation-fill-mode: none, none, forwards;
 			-webkit-animation-delay: 2s, 5s, 7s;
+			-moz-animation-name: highlight, highlight-two, highlight-three;
+			-moz-animation-duration: 1s;
+			-moz-animation-timing-function: ease-in-out;
+			-moz-animation-fill-mode: none, none, forwards;
+			-moz-animation-delay: 2s, 5s, 7s;
+			animation-name: highlight, highlight-two, highlight-three;
+			animation-duration: 1s;
+			animation-timing-function: ease-in-out;
+			animation-fill-mode: none, none, forwards;
+			animation-delay: 2s, 5s, 7s;
 		}
 		.cssanimations .order &#nj {
 			-webkit-animation-delay: 1s;
+			-moz-animation-delay: 1s;
+			animation-delay: 1s;
 		}
 		.cssanimations .order &#md {
 			-webkit-animation-delay: 3s;
+			-moz-animation-delay: 3s;
+			animation-delay: 3s;
 		}
 		.cssanimations .order &#ma {
 			-webkit-animation-delay: 4s;
+			-moz-animation-delay: 4s;
+			animation-delay: 4s;
 		}
 		.cssanimations .order &#me {
 			-webkit-animation-delay: 6s;
+			-moz-animation-delay: 6s;
+			animation-delay: 6s;
 		}
 		.csstransitions & {
 			-webkit-transition: color 0.5s ease-in-out 0s;
+			-moz-transition: color 0.5s ease-in-out 0s;
+			transition: color 0.5s ease-in-out 0s;
 		}
 		.lived & {
 			&#nj, &#ct, &#md, &#ma, &#me {
@@ -122,6 +150,36 @@ ul.stately {
 	}
 }
 @-webkit-keyframes highlight-three {
+	25%, 75%, 100% {
+		color: $link-color;
+	}
+}
+@-moz-keyframes highlight {
+	25%, 75%, 100% {
+		color: $link-color;
+	}
+}
+@-moz-keyframes highlight-two {
+	25%, 75% {
+		color: $link-color;
+	}
+}
+@-moz-keyframes highlight-three {
+	25%, 75%, 100% {
+		color: $link-color;
+	}
+}
+@keyframes highlight {
+	25%, 75%, 100% {
+		color: $link-color;
+	}
+}
+@keyframes highlight-two {
+	25%, 75% {
+		color: $link-color;
+	}
+}
+@keyframes highlight-three {
 	25%, 75%, 100% {
 		color: $link-color;
 	}

@@ -480,6 +480,14 @@ ul.stately li {
   -webkit-animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: highlight;
+  -moz-animation-duration: 1s;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-fill-mode: forwards;
+  animation-name: highlight;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
 .cssanimations .order ul.stately li#ct {
   -webkit-animation-name: highlight, highlight-two, highlight-three;
@@ -487,21 +495,41 @@ ul.stately li {
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: none, none, forwards;
   -webkit-animation-delay: 2s, 5s, 7s;
+  -moz-animation-name: highlight, highlight-two, highlight-three;
+  -moz-animation-duration: 1s;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-fill-mode: none, none, forwards;
+  -moz-animation-delay: 2s, 5s, 7s;
+  animation-name: highlight, highlight-two, highlight-three;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: none, none, forwards;
+  animation-delay: 2s, 5s, 7s;
 }
 .cssanimations .order ul.stately li#nj {
   -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
 }
 .cssanimations .order ul.stately li#md {
   -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  animation-delay: 3s;
 }
 .cssanimations .order ul.stately li#ma {
   -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  animation-delay: 4s;
 }
 .cssanimations .order ul.stately li#me {
   -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  animation-delay: 6s;
 }
 .csstransitions ul.stately li {
   -webkit-transition: color 0.5s ease-in-out 0s;
+  -moz-transition: color 0.5s ease-in-out 0s;
+  transition: color 0.5s ease-in-out 0s;
 }
 .lived ul.stately li#nj, .lived ul.stately li#ct, .lived ul.stately li#md, .lived ul.stately li#ma, .lived ul.stately li#me {
   color: #2a98ff;
@@ -529,6 +557,42 @@ ul.stately li {
 }
 
 @-webkit-keyframes highlight-three {
+  25%, 75%, 100% {
+    color: #2a98ff;
+  }
+}
+
+@-moz-keyframes highlight {
+  25%, 75%, 100% {
+    color: #2a98ff;
+  }
+}
+
+@-moz-keyframes highlight-two {
+  25%, 75% {
+    color: #2a98ff;
+  }
+}
+
+@-moz-keyframes highlight-three {
+  25%, 75%, 100% {
+    color: #2a98ff;
+  }
+}
+
+@keyframes highlight {
+  25%, 75%, 100% {
+    color: #2a98ff;
+  }
+}
+
+@keyframes highlight-two {
+  25%, 75% {
+    color: #2a98ff;
+  }
+}
+
+@keyframes highlight-three {
   25%, 75%, 100% {
     color: #2a98ff;
   }
